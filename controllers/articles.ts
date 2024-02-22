@@ -12,6 +12,8 @@ interface IRequest extends Request {
   userId?: string;
 }
 
+// hello
+
 const storage = multer.diskStorage({
   destination: function (req: IRequest, file: any, cb: any) {
     cb(null, __dirname + "/../../public/uploads/");
