@@ -30,4 +30,6 @@ app.use("/swagger", swaggerRouter);
 const server = http.createServer(app);
 // startWebSocketServer(server);
 
-server.listen(8888, () => console.log("Server running on port 8888"));
+server.listen(process.env.PORT, () =>
+  console.log("Server running on port " + process.env.PORT)
+);
